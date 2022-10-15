@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Frontend Mentor | QR code component</title>
+
+</head>
+<body>
+  <main>
+    <div class="Box-container">
+      <section id="qrcode" class="QRCode-content">
+        <!-- <a href="https://www.frontendmentor.io/home"><img src="./images/image-qr-code.png" alt="qrCode" id="QRCode-image"></a> -->
+      </section>
+      <section class="text-content">
+        <h2>Improved your Front-end skills by building projects</h2>
+        <p id="note">
+          You can scan QR code to visit Frontend Mentor and take your coding skills to the next level.
+        </p>
+      </section>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Coded by <a href="#">Giorgi Paksashvili</a>.
+  </div>
+
+
+  <script>
+    window.addEventListener("load", () => {
+      var qrc = new QRCode(document.getElementById("qrcode"), "https://www.frontendmentor.io/home");
+    });
+    </script>
+</body>
+</html>
